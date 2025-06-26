@@ -1,20 +1,138 @@
----
-title: Calculus I
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculus I – Limits</title>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      background-color: #fefefe;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #005792;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    hr {
+      margin: 2em 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>📘 Calculus I: Limits</h1>
 
-## Limits and Continuity
+  <h2>What is a Limit?</h2>
+  <p>
+    The <strong>limit</strong> of a function \( f(x) \) as \( x \) approaches a value \( a \) is the value that \( f(x) \) gets closer to as \( x \) gets closer to \( a \). We write this as:
+  </p>
+  <p>
+    $$
+    \lim_{x \to a} f(x) = L
+    $$
+  </p>
+  <p>
+    This means that as \( x \) gets closer and closer to \( a \), the function values \( f(x) \) get closer and closer to \( L \).
+  </p>
 
-Here's a basic limit:
+  <h2>Examples</h2>
 
-$$
-\lim_{x \to 0} \frac{\sin x}{x} = 1
-$$
+  <h3>Example 1: A Simple Polynomial</h3>
+  <p>Find the limit:</p>
+  <p>
+    $$
+    \lim_{x \to 2} (3x + 1)
+    $$
+  </p>
+  <p>Just plug in:</p>
+  <p>
+    \( 3(2) + 1 = 7 \)  
+    ✅ So the limit is 7.
 
-## Derivatives
+  <h3>Example 2: A Removable Discontinuity</h3>
+  <p>Find the limit:</p>
+  <p>
+    $$
+    \lim_{x \to 1} \frac{x^2 - 1}{x - 1}
+    $$
+  </p>
+  <p>Factor the numerator:</p>
+  <p>
+    $$
+    \frac{(x - 1)(x + 1)}{x - 1} = x + 1 \quad \text{for } x \ne 1
+    $$
+  </p>
+  <p>So the limit is:</p>
+  <p>
+    $$
+    \lim_{x \to 1} (x + 1) = 2
+    $$
 
-To find the derivative of \( f(x) = x^2 \), we use the limit definition:
+  <hr>
 
-$$
-f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
-$$
+  <h2>One-Sided Limits</h2>
+  <p>Limits from the left and right:</p>
+  <p>
+    $$
+    \lim_{x \to a^-} f(x) \quad \text{and} \quad \lim_{x \to a^+} f(x)
+    $$
+  </p>
+  <p>If these are not equal, the limit does not exist.</p>
+
+  <h3>Example 3: Step Function</h3>
+  <p>
+    Let \( f(x) = \begin{cases}
+    1, & x < 0 \\
+    2, & x \ge 0
+    \end{cases} \)
+  </p>
+  <p>
+    $$
+    \lim_{x \to 0^-} f(x) = 1, \quad \lim_{x \to 0^+} f(x) = 2
+    $$
+    So:
+    $$
+    \lim_{x \to 0} f(x) \text{ does not exist}
+    $$
+
+  <hr>
+
+  <h2>Infinite Limits</h2>
+  <p>
+    When \( f(x) \) grows without bound as \( x \to a \), we write:
+  </p>
+  <p>
+    $$
+    \lim_{x \to a} f(x) = \infty \quad \text{or} \quad -\infty
+    $$
+  </p>
+
+  <h3>Example 4: Vertical Asymptote</h3>
+  <p>
+    $$
+    \lim_{x \to 0^+} \frac{1}{x} = \infty, \quad
+    \lim_{x \to 0^-} \frac{1}{x} = -\infty
+    $$
+
+  <hr>
+
+  <h2>Limit Laws (Short Version)</h2>
+  <ul>
+    <li>\( \lim [f(x) + g(x)] = \lim f(x) + \lim g(x) \)</li>
+    <li>\( \lim [cf(x)] = c \cdot \lim f(x) \)</li>
+    <li>\( \lim [f(x)g(x)] = (\lim f(x))(\lim g(x)) \)</li>
+    <li>\( \lim \left[\frac{f(x)}{g(x)}\right] = \frac{\lim f(x)}{\lim g(x)} \), if \( \lim g(x) \ne 0 \)</li>
+  </ul>
+
+  <p>More to come soon. ✏️</p>
+
+</body>
+</html>
