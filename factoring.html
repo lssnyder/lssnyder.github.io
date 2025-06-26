@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Factoring Polynomials</title>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 750px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #fcfcfc;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003366;
+    }
+    .box {
+      background: #f0f8ff;
+      border-left: 4px solid #005792;
+      padding: 1rem;
+      margin: 1.5rem 0;
+    }
+    .example {
+      background: #f9f9f9;
+      border-left: 4px solid #888;
+      padding: 1rem;
+      margin: 1.5rem 0;
+    }
+    ul {
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧮 Factoring Polynomials</h1>
+
+  <p>Factoring is the process of rewriting a polynomial as a product of simpler expressions. It’s one of the most important tools in algebra for solving equations, simplifying expressions, and analyzing functions.</p>
+
+  <h2>🔹 Step-by-Step Strategy</h2>
+  <div class="box">
+    <ol>
+      <li><strong>Look for a Greatest Common Factor (GCF)</strong> first</li>
+      <li>Check if it’s a <strong>special pattern</strong> (like difference of squares)</li>
+      <li>Try <strong>factoring trinomials</strong></li>
+      <li>Use <strong>grouping</strong> if there are 4 terms</li>
+    </ol>
+  </div>
+
+  <h2>🧰 Example 1: GCF First</h2>
+  <div class="example">
+    <p>Factor:  
+      $$12x^3 - 18x^2$$</p>
+    <p><strong>Step 1:</strong> GCF is \( 6x^2 \)</p>
+    $$
+    12x^3 - 18x^2 = 6x^2(2x - 3)
+    $$
+    ✅ Factored form: \( \boxed{6x^2(2x - 3)} \)
+  </div>
+
+  <h2>🧰 Example 2: Difference of Squares</h2>
+  <div class="example">
+    <p>Factor:
+      $$x^2 - 25$$</p>
+    <p><strong>Recognize:</strong> This fits \( a^2 - b^2 = (a - b)(a + b) \)</p>
+    $$
+    x^2 - 25 = (x - 5)(x + 5)
+    $$
+    ✅ Factored form: \( \boxed{(x - 5)(x + 5)} \)
+  </div>
+
+  <h2>🧰 Example 3: Factoring a Trinomial</h2>
+  <div class="example">
+    <p>Factor:
+      $$x^2 + 7x + 12$$</p>
+    <p>We need two numbers that multiply to \( 12 \) and add to \( 7 \):  
+      \( 3 \times 4 = 12 \), \( 3 + 4 = 7 \)</p>
+    $$
+    x^2 + 7x + 12 = (x + 3)(x + 4)
+    $$
+    ✅ Factored form: \( \boxed{(x + 3)(x + 4)} \)
+  </div>
+
+  <h2>🧰 Example 4: Grouping (4 terms)</h2>
+  <div class="example">
+    <p>Factor:
+      $$x^3 + 3x^2 + 2x + 6$$</p>
+    <p><strong>Step 1:</strong> Group terms:</p>
+    $$
+    (x^3 + 3x^2) + (2x + 6)
+    $$
+    <p><strong>Step 2:</strong> Factor each group:</p>
+    $$
+    x^2(x + 3) + 2(x + 3)
+    $$
+    <p><strong>Step 3:</strong> Factor common binomial:</p>
+    $$
+    (x + 3)(x^2 + 2)
+    $$
+    ✅ Factored form: \( \boxed{(x + 3)(x^2 + 2)} \)
+  </div>
+
+  <h2>✅ Quick Factoring Tips</h2>
+  <ul>
+    <li>Always factor out a GCF first — even if it’s just a number</li>
+    <li>Memorize special patterns (squares, cubes)</li>
+    <li>For quadratics: use the product/sum method when \( a = 1 \), and AC method when \( a \ne 1 \)</li>
+    <li>Check by expanding — your factored form should match the original</li>
+  </ul>
+
+</body>
+</html>
