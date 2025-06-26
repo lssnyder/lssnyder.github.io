@@ -1,0 +1,20 @@
+---
+title: Calculus I
+layout: default
+---
+
+## Limits and Continuity
+
+Here's a basic limit:
+
+$$
+\lim_{x \to 0} \frac{\sin x}{x} = 1
+$$
+
+## Derivatives
+
+To find the derivative of \( f(x) = x^2 \), we use the limit definition:
+
+$$
+f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
+$$
